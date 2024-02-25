@@ -1,31 +1,19 @@
-# UI Test
+#UI Test
 
+##Quick start
+1. Make sure you have a version of Node.js equal to or greater than 10.13 installed
+2. Clone the repository `https://github.com/estebanramir/ui-tet-zemoga`
+3. In the ui-test folder, run the command `npm run install:all` and wait for all the Node modules to be installed
+4. In the root folder, run the command `npm run dev`
+5. The application is exposed at http://localhost:3000/
+6. Happy Code
 
-## Quick start
+##Technological decisions
 
+###Front End
+For the Front End development, it was decided to use the Next JS framework because it facilitates the creation of server-side-rendered applications using React JS as a base. This technology was chosen mainly because it offers better performance and SEO by rendering the application's HTML from the server.
+The rendering speed in this case depends on the processing capacity of the server, which improves loading times in some cases. In this way, multiple instances of the application could also be created according to the growth of requests.
+useState was used for the management of specific states per component, additionally, a context was used to manage the state of whether it is grid or list and that it reaches different components that are wanted from a branch of the DOM.
 
-1.  Asegurarse de tener instalada una versión de Node.js igual o superior a 10.13
-2.  Clonar el repositorio ``
-3.  En la carpeta raíz corre el comando `npm run install:all` y espera a que se instalen todos los módulos de Node
-4.  En la carpeta raíz corre el comando `npm run dev`
-5.  La aplicación queda expuesta en http://localhost:3000/
-6.  Happy Code
-
-
-## Decisiones tecnológicas:
-
-
-
-### Front End
-
-
-Para el desarrollo de Front End se decidió utilizar el framework Next JS debido a que facilita la creación de aplicaciones server-side-render utilizando como base React JS. Se escogió esta tecnología principalmente porque ofrece una mejor performance y SEO al estar renderizando el HTML de la aplicación desde el servidor.
-La velocidad de renderizado en este caso depende de la capacidad de procesamiento del servidor lo que mejora los tiempos de carga en algunos casos. De este modo, también se podrían crear varias instancias de la aplicación según el crecimiento de las peticiones.
-se utilizo para el manejo de estados especificos por componente useState, adicionalmente, se utilizo un context para manejar el estado de si es grid o list y que llegue a diferentes componentes que se quieran de una rama del DOM.
-
-
-### Back End
-
-
-Al tener un poco de experiencia para el back, y analizando que la Para el Back End se utilizó Node JS junto Express lo que facilitó la creación del api y las rutas de los diferentes endpoints.
-
+###Back End
+Having some experience for the back, and analyzing that the application does not require a large number of concurrent users, it was decided to use Node JS together with Express, which facilitated the creation of the API and the routes of the different endpoints.
