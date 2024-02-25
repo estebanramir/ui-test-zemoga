@@ -1,0 +1,101 @@
+
+
+.card-left{
+
+
+}
+.card-center{
+    flex-grow: 2;
+    font-family:Lato;
+    font-weight:400;
+    font-size: 15px;
+    color: var(--color-white);
+}
+.card-rigth{
+    padding-bottom: 35px;
+
+}
+.card-container{
+    display:flex;
+    flex-direction: row;
+    height: 170px;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.0001) 0%, #888888 24%, #666666 50%, var(--color-darker-gray) 71.88%);
+    padding-bottom: 40px;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+.card-image{
+    height: auto;
+    width: 276px;
+    z-index: -1;
+    position: sticky;
+    object-fit: cover;
+}
+
+
+.icon-result{
+    height: 45px;
+    width: 45px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon-result[aria-label="thumbs up"] {
+    background-color: rgba(var(--color-green-positive), .8);
+    height: 45px;  
+    width: 45px;
+  }
+.icon-result[aria-label="thumbs down"] {
+    background-color: rgba(var(--color-yellow-negative), .8);
+    height: 45px;  
+    width: 45px;
+}
+.icon-button-vote[aria-label="thumbs up"] {
+    border: none;
+    background-color: rgba(var(--color-green-positive), .8);
+    height: 45px;  
+    width: 45px;
+  }
+.icon-button-vote[aria-label="thumbs up selected"] {
+    background-color: rgba(var(--color-green-positive), .8);
+    border: var(--color-white) solid 2px;
+    height: 45px;  
+    width: 45px;
+  }
+.icon-button-vote[aria-label="thumbs down"] {
+    border: none;
+    background-color: rgba(var(--color-yellow-negative), .8);
+    height: 45px;  
+    width: 45px;
+}
+.icon-button-vote[aria-label="thumbs down selected"] {
+    background-color: rgba(var(--color-yellow-negative), .8);
+    border: var(--color-white) solid 2px;
+    height: 45px;  
+    width: 45px;
+}
+
+
+.icon-button-vote{
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    height: 45px;  
+    width: 45px;
+}
+.card-info-title{
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 36px;
+    color: var(--color-white);
+    margin: 15px 0;
+}
+.card-info-desc{
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--color-white);
+    margin: 15px 0;
+}

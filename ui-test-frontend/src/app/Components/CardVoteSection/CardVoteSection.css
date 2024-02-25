@@ -1,0 +1,99 @@
+.voting-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+    width: 250px;
+}
+.voting-container-vote{
+    display: flex;
+    justify-content: end;
+    margin: 15px;
+    width: 250px;
+}
+.card-coting-message{
+    color: var(--color-white);
+    justify-content: flex-end;
+    font-size: 15px;
+    display: flex;
+    margin: 15px 15px;
+}
+.card-coting-message-grid{
+    color: var(--color-white);
+    justify-content: flex-end;
+    font-size: 15px;
+    display: flex;
+    margin: 0px 15px;
+}
+.submitt-vote{
+    width: 135px;
+    height: 45px;
+    background-color: rgb(00,00,00, 0.6);
+    color: white;
+    border: white 1px solid;
+    font-size: 18px;
+
+}
+
+.icon-button-vote[aria-label="thumbs up"] {
+    background-color: rgba(var(--color-green-positive), .8);
+    height: 45px;  
+    width: 45px;
+}
+.icon-button-vote[aria-label="thumbs up selected"] {
+    background-color: rgba(var(--color-green-positive), .8);
+    border: var(--color-white) solid 2px;
+    height: 45px;  
+    width: 45px;
+}
+.icon-button-vote[aria-label="thumbs down"] {
+    background-color: rgba(var(--color-yellow-negative), .8);
+    height: 45px;  
+    width: 45px;
+}
+.icon-button-vote[aria-label="thumbs down selected"] {
+    background-color: rgba(var(--color-yellow-negative), .8);
+    border: var(--color-white) solid 2px;
+    height: 45px;  
+    width: 45px;
+}
+
+
+.submitt-vote-grid{
+    width: 135px;
+    height: 30px;
+    background-color: rgb(00,00,00, 0.6);
+    color: white;
+    border: white 1px solid;
+    font-size: 18px;
+
+}
+.icon-button-vote-grid[aria-label="thumbs up"] {
+    border: none;
+    background-color: rgba(var(--color-green-positive), .8);
+    height: 30px;  
+    width: 30px;
+  }
+.icon-button-vote-grid[aria-label="thumbs up selected"] {
+    background-color: rgba(var(--color-green-positive), .8);
+    border: var(--color-white) solid 2px;
+    height: 30px;  
+    width: 30px;
+  }
+.icon-button-vote-grid[aria-label="thumbs down"] {
+    border: none;
+    background-color: rgba(var(--color-yellow-negative), .8);
+    height: 30px;  
+    width: 30px;
+}
+.icon-button-vote-grid[aria-label="thumbs down selected"] {
+    background-color: rgba(var(--color-yellow-negative), .8);
+    border: var(--color-white) solid 2px;
+    height: 30px;  
+    width: 30px;
+}
+
+.voting-section{
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+}

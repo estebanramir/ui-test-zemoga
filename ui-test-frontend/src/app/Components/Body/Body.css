@@ -1,0 +1,40 @@
+.body-filter{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.cards-grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.cards-grid-mobile{
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    max-width: 100%;
+}
+.body-container{
+    width: 100%;
+}
+.filter-select{
+    width: 173px;
+    height: 63px;
+    font-size: 13.5px;
+    text-align: center;
+    border: black solid 2px;
+    appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url('/drop-down-arrow.png'); 
+  background-size: 14px;
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+
+}
+.filter-title{
+    font-weight:300;
+    font-size:45px;
+    line-height:54px;
+    color:#464646;
+}
